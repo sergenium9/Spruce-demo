@@ -4,7 +4,7 @@ describe('Login', () => {
     beforeEach(() => {
         browser.url('./');
     });
-    it('Should be able to click on any top menu link under Resources', () => {
+    it('Should be able to click on any top menu link under Resources by text', () => {
         //Use the helper method to click on item by text
         TopMenuPage.navigateToResourcesMenuItem('Pricing');
         //Verify the URL
