@@ -12,7 +12,7 @@ describe('AboutUs', () => {
         TopMenuPage.$aboutLnk.click();
         //Scroll down to office locations
         AboutUsPage.$locationsList.scrollIntoView();
-        //Verify that at least 4 locations are displayed 
+        //Wait untill at least 4 locations are displayed 
         browser.waitUntil(() => {
             return AboutUsPage.$$statesItems.map((elem) => elem.waitForDisplayed()).length > 3;
         }, 10000, '4 items were not displayed');
